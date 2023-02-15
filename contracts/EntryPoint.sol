@@ -1,6 +1,6 @@
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.0;
 
-import "hardhat/console.sol"; // todo remove
+// import "hardhat/console.sol"; // todo remove
 
 struct UserOperation {
     address sender;
@@ -38,8 +38,8 @@ contract EntryPoint {
     }
 
     function handleOps(UserOperation[] calldata ops, address payable beneficiary) public {
-        console.log(ops.length);
-        console.log(ops[0].sender);
+        // console.log(ops.length);
+        // console.log(ops[0].sender);
     }
 
     function handleAggregatedOps(
